@@ -1,0 +1,138 @@
+# Git Fusion global configuration file.
+#
+# Contains settings that affect all Git Fusion repos.
+#
+# Git Fusion creates this file during initialization. Git Fusion reads this
+# file once at the start of each Git operation. Git Fusion never writes to
+# this file. You can edit this file.
+#
+#
+# [repo-creation]
+#       Controls how Git Fusion creates new repos.
+#
+#   charset:
+#       Default charset used for a new repo.  Used when working with a
+#       unicode enabled Perforce server.
+#
+# [git-to-perforce]
+#       Controls how Git commits are converted to Perforce changes.
+#
+#   change-owner:
+#       Determines who the Perforce change owner will be.
+#
+#       author (default)
+#           Assigns the change owner to that of the Git commit author.
+#
+#       pusher
+#           Assigns the change owner to that of the Git pusher.
+#
+#   enable-git-branch-creation:
+#       Create branches in Perforce when copying from Git?
+#
+#       yes (default)
+#           Yes, create a new branch of Perforce depot file hierarchy for each
+#           copied branch of Git workspace history. This includes task branches
+#           which become 'anonymous' branches in Perforce.
+#
+#       no
+#           No, do not create any branches. When copying from Git to Perforce,
+#           reject any push of a new branch not already described in the
+#           repo's config file. When copying from Perforce to Git, copy
+#           Perforce integrations or merges from other file hierarchies as
+#           edits to files, not Git merge commits.
+#
+#   enable-git-merge-commits:
+#       Allow Git merge commits to be pushed to Perforce?
+#
+#       yes (default)
+#           Yes, Git merge commits may be pushed to Perforce, and will appear
+#           as integrations between branches in Perforce.
+#
+#       no
+#           Disallow Git merge commits. Integrations between branches in
+#           Perforce can still be performed using Perforce clients.
+#
+#   enable-git-submodules:
+#       Allow Git submodules to be pushed to Perforce?
+#
+#       yes (default)
+#           Yes, Git submodules may be pushed to Perforce.
+#
+#       no
+#           Disallow Git submodules from being introduced into Git Fusion.
+#           If any submodules have already been pushed to Git Fusion, they
+#           will be left intact and be reproduced via clone/pull.
+#
+#   preflight-commit:
+#       Custom 'git push' commit filter.
+#
+#       none (default)
+#           No filter.
+#
+#       pass <msg>
+#           Permit all commits (that Git Fusion also permits).
+#
+#       fail <msg>
+#           Reject all commits.
+#
+#       cmd <args>
+#           Run cmd. If cmd returns exit code 0, permit commit.
+#           Exit code non-0: reject commit.
+#
+#   read-permission-check:
+#       Perform 'p4 protects' permission checks for each
+#       git clone/pull/fetch?
+#
+#       group (default)
+#           Use only Git Fusion permissions groups, no 'p4 protect' checks.
+#
+#       user
+#           Check puller's Perforce user against 'p4 protects' and all
+#           views within the repo for read permission.
+#
+#   git-merge-avoidance-after-change-num:
+#       Improve repo rebuild results. Avoid unnecessary merge commits.
+#       Works for changelists pushed by Git Fusion version 13.3 or later.
+#       Integer changelist number of last changelist submitted before
+#       installing Git Fusion 13.3 or later.
+#
+#       'p4 counter change' (default)
+#
+#
+# [perforce-to-git]
+#       Controls how Perforce changes are converted to Git commits.
+#
+#   http_url:
+#       The URL used by Git to clone a repository from Git Fusion over HTTP.
+#       The value may contain {var} placeholders that will be replaced by
+#       values from the Git Fusion environment. These are as follows:
+#
+#         {repo} -- name of the Git Fusion repository being cloned.
+#         {host} -- fully-qualified name of the Git Fusion host.
+#
+#       For example:
+#         http://{host}/git/{repo}
+#
+#   ssh_url:
+#       The "URL" used by Git to clone a repository from Git Fusion via SSH.
+#       The value may contain {var} placeholders that will be replaced by
+#       values from the Git Fusion environment. These are as follows:
+#
+#         {user} -- name of SSH user on the Git Fusion host.
+#         (In addition, those described in http_url above.)
+#
+#       For example:
+#         {user}@{host}:{repo}
+#
+#
+# [@features]
+#       Enable or disable experimental features.  This section may also
+#       appear in per-repo config files.  Per-repo values will override
+#       global values.  Features default to disabled unless enabled here.
+#
+#       To see a list of available features use:
+#         'git clone git@server:@features'
+#       To see which features are enabled for a repo use:
+#         'git clone git@server:@features@repo'
+#
+#

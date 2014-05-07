@@ -1,0 +1,46 @@
+The conversion from Git Fusion 2012.2 to Git Fusion 2013.1 required the 
+object cache contained within Perforce to be deleted. As a result, 
+re-creating the Git Fusion cache Git repository may generate commit 
+objects which have different SHA-1 values as a result of different 
+timezone values. 
+
+Each user must clone a new version of each repo needed
+for his or her work from Git Fusion:
+
+	git clone git@GIT_FUSION_HOST:REPO
+
+Users who do not have any outstanding work can just start using the 
+new 13.1 repo and remove the old 12.2 local repo.
+
+Users who have outstanding work to push must use the 
+following procedure to integrate these changes into the new repository.
+
+1) Identify the latest common commit between the old repo and the new 
+   one:
+	In both the new repo location and the old repo location, run 
+		git log --pretty=oneline -NN
+	Find the most recent matching message from these two commands. NN is 
+	how many commits to show; try 20 initially and increase if needed to 
+	find the most recent matching commit.
+
+2) In the old repo location, create an empty directory (e.g., patches) and 
+   cd into this directory
+
+3) Using the old repo's most recent matching commit and the very latest 
+   commit, generate a set of patches:
+	git format-patch MOST_RECENT_OLD_COMMIT..LAST_OLD_COMMIT
+   This will generate one patch file for each commit.
+
+4) In the new repo location, create a temporary branch: 
+	git checkout -b TMP_NAME
+
+5) Apply the outstanding patches:
+	git am PATH_TO_OLD_REPO/patches/0*
+
+6) Merge/rebase in this branch any outstanding changes from master.
+
+7) Merge this branch into master.
+
+8) Push these changes to Git Fusion.
+
+9) No longer use the old repo.

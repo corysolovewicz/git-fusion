@@ -1,0 +1,115 @@
+# Git Fusion repo configuration file.
+#
+# Contains settings that affect a single Git Fusion repo.
+#
+# See also global configuration file //P4GF_DEPOT/p4gf_config. This repo
+# configuration file can override settings from the global configuration file.
+#
+# Git Fusion creates this file during initialization. Git Fusion reads this
+# file once at the start of each Git operation. Git Fusion writes to this file
+# often. You can write to this file: Git Fusion retains your edited values but
+# not edited comments or formatting.
+#
+# [@repo]
+#       One section for repo-wide settings.
+#
+#   description:
+#       A brief description of this repo which will be returned by @list
+#
+#   charset:
+#       Charset used for this repo.  Used when working with a unicode enabled
+#       Perforce server.
+#       See 'p4 help charset' for a list of possible values.
+#
+#   enable-git-branch-creation:
+#       Create branches in Perforce when copying from Git?
+#
+#       yes (default)
+#           Yes, create a new branch of Perforce depot file hierarchy for each
+#           copied branch of Git workspace history. This includes task branches
+#           which become 'anonymous' branches in Perforce.
+#
+#       no
+#           No, do not create any branches. When copying from Git to Perforce,
+#           reject any push of a new branch not already described in the
+#           repo's config file. When copying from Perforce to Git, copy
+#           Perforce integrations or merges from other file hierarchies as
+#           edits to files, not Git merge commits.
+#
+#   enable-git-merge-commits:
+#       Allow Git merge commits to be pushed to Perforce?
+#
+#       yes (default)
+#           Yes, Git merge commits may be pushed to Perforce, and will appear
+#           as integrations between branches in Perforce.
+#
+#       no
+#           Disallow Git merge commits. Integrations between branches in
+#           Perforce can still be performed using Perforce clients.
+#
+#   enable-git-submodules:
+#       Allow Git submodules to be pushed to Perforce?
+#
+#       yes (default)
+#           Yes, Git submodules may be pushed to Perforce.
+#
+#       no
+#           Disallow Git submodules from being introduced into Git Fusion.
+#           If any submodules have already been pushed to Git Fusion, they
+#           will be left intact and be reproduced via clone/pull.
+#
+#   ignore-author-permissions:
+#       Consider whose permissions when copying from Git to Perforce?
+#       Who must have 'write' permission to a file being changed?
+#
+#       yes
+#           Require only the pusher to have Perforce write permission.
+#
+#       no (default)
+#           Require both Git author and pusher to both have write permission.
+#
+#   change-owner:
+#       Determines who the Perforce change owner will be.
+#
+#       author (default)
+#           Assigns the change owner to that of the Git commit author.
+#
+#       pusher
+#           Assigns the change owner to that of the Git pusher.
+#
+#   preflight-commit:
+#       Custom 'git push' commit filter.
+#
+#       none (default)
+#           No filter.
+#
+#       pass <msg>
+#           Permit all commits (that Git Fusion also permits).
+#
+#       fail <msg>
+#           Reject all commits.
+#
+#       cmd <args>
+#           Run cmd. If cmd returns exit code 0, permit commit.
+#           Exit code non-0: reject commit.
+#
+# [<git-fusion-branch-id>]
+#       One section for each branch known to Git Fusion. Describes a mapping
+#       between a single Git branch of workspace history and a single Perforce
+#       branch of file hierarchy.
+#
+#       Section name can be same as git-branch-name or a Perforce branch name.
+#       Section name must be unique within this Git Fusion repo.
+#
+#   git-branch-name:
+#       Name of the Git branch, such as "master".
+#
+#   view:
+#       A Perforce view specification that maps Perforce depot paths (left
+#       side) to Git work tree paths (right side).
+#
+#       Used internally as a Perforce workspace/client view mapping. All
+#       Perforce workspace/client view mapping operations permitted,
+#       including multiple lines, exclusion (minus/-) lines, overlay
+#       (plus/+) lines.
+#

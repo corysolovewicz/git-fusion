@@ -1,0 +1,1978 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2014-01-08 21:34+PST\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ../p4gf_atomic_lock.py:127
+msgid "Git Fusion: update_repo_reviews incorrect action '{}'"
+msgstr ""
+
+#: ../p4gf_atomic_lock.py:144
+msgid "Git Fusion: GF instance reviews user '{}' does not exist"
+msgstr ""
+
+#: ../p4gf_auth_server.py:94
+msgid "Records requests to audit log, performs only permitted requests."
+msgstr ""
+
+#: ../p4gf_auth_server.py:95
+msgid "usage: p4gf_auth_server.py [-h] [-V] [--user] [--keyfp] git-upload-pack | git-receive-pack [options] <view>"
+msgstr ""
+
+#: ../p4gf_auth_server.py:96
+msgid "Perforce user account requesting this action"
+msgstr ""
+
+#: ../p4gf_auth_server.py:97
+msgid "ssh key used to authenticate this connection"
+msgstr ""
+
+#: ../p4gf_auth_server.py:98
+msgid "git-upload-pack or git-receive-pack, plus options"
+msgstr ""
+
+#: ../p4gf_auth_server.py:99
+msgid "options for git-upload-pack or git-receive-pack"
+msgstr ""
+
+#: ../p4gf_auth_server.py:109
+msgid "Unknown command '{bad}', must be one of '{good}'."
+msgstr ""
+
+#: ../p4gf_auth_server.py:115
+msgid "Missing directory in '{cmd}' <view>"
+msgstr ""
+
+#: ../p4gf_auth_server.py:130
+msgid "Illegal view name '{}'"
+msgstr ""
+
+#: ../p4gf_auth_server.py:134
+msgid "Illegal option: '{}'"
+msgstr ""
+
+#: ../p4gf_auth_server.py:138
+msgid "--user required."
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:162
+#: ../p4gf_auth_update_authorized_keys.py:165
+msgid "invalid change number '{}'"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:218
+#: ../p4gf_auth_update_authorized_keys.py:461
+msgid "apparently invalid SSH key '{}' caused '{}'"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:220
+msgid "error decoding SSH key type for key '{}'"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:463
+msgid "failed to hash SSH key: '{}'"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:523
+msgid "Could not extract user name from unrecognized depot path:"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:527
+msgid "File '{}' does not conform to a valid SSH key, ignoring..."
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:532
+#: ../p4gf_auth_update_authorized_keys.py:574
+msgid "action {}, user {}, key {}, FP {}"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:593
+msgid "NOP. No changes to {path}"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:598
+msgid "NOP. Changes to {path}={ch} < counter {counter}={ct}"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:609
+msgid "processing change @{}: {}"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:617
+msgid "file {}, action {}"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:626
+msgid "unhandled change type '{}'"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:636
+msgid "No files found in '{}'"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:638
+msgid "rebuilding all keys through change {}"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:654
+msgid "adding file {}"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:669
+msgid ""
+"Copies SSH public keys from\n"
+"Perforce depot to current user's directory. This script assumes OpenSSH\n"
+"is the SSH implementation in use, and as such, writes to 'authorized_keys'\n"
+"in the ~/.ssh directory. If --ssh2 is used, then writes to 'authorization'\n"
+"in the ~/.ssh2 directory, writing the SSH2 formatted public keys in the\n"
+"'keys' directory under ~/.ssh2, using the Perforce user names to avoid\n"
+"name collisions. If public keys read from the depot are the wrong format\n"
+"(OpenSSH vs. SSH2), they will be converted when written to disk.\n"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:679
+msgid "rebuild keys file"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:681
+msgid "print details of update process"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:683
+msgid "produce 'SSH2' output"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:684
+msgid "path to authorized keys file"
+msgstr ""
+
+#: ../p4gf_auth_update_authorized_keys.py:699
+#: ../p4gf_auth_update_authorized_keys.py:723 ../p4gf_delete_repo.py:632
+msgid "P4 exception occurred: {}"
+msgstr ""
+
+#: ../p4gf_branch.py:134
+msgid "repository configuration section [{}] may not contain both 'view' and 'stream'"
+msgstr ""
+
+#: ../p4gf_branch.py:142
+msgid "repository configuration section [{}] '{}' does not refer to a valid stream"
+msgstr ""
+
+#: ../p4gf_branch.py:146
+msgid "repository configuration section [{}] '{}' refers to a task stream"
+msgstr ""
+
+#: ../p4gf_branch_id.py:285
+msgid "Loading commit tree into memory..."
+msgstr ""
+
+#: ../p4gf_branch_id.py:341
+msgid "Finding child commits..."
+msgstr ""
+
+#: ../p4gf_branch_id.py:463
+msgid "BUG: _pushed_branch_sequence() returned a branch '{branch}' with no corresponding PreReceiveTuple"
+msgstr ""
+
+#: ../p4gf_branch_id.py:992
+msgid "anon-{}"
+msgstr ""
+
+#: ../p4gf_branch_id.py:1108
+msgid ""
+"Usage: p4gf_branch_id.py <repo-config-file> <git-dir> [ref ...]\n"
+"\n"
+"Runs branch-id calculation on the branches defined in\n"
+"repo-config-file within the given git directory.\n"
+"See debug log for results."
+msgstr ""
+
+#: ../p4gf_call_git.py:38
+msgid ""
+"Processing will continue even if connection is closed.\n"
+msgstr ""
+
+#: ../p4gf_client_pool.py:101
+msgid "Created by Perforce Git Fusion for queries in '{view}'."
+msgstr ""
+
+#: ../p4gf_config.py:70
+msgid "Enable creation of branches from streams"
+msgstr ""
+
+#: ../p4gf_config.py:71
+msgid "Create Swarm reviews by pushing to reviews/xxx"
+msgstr ""
+
+#: ../p4gf_config.py:72
+msgid "git push decision matrix, version 2, with invisible-to-Git P4 changelists"
+msgstr ""
+
+#: ../p4gf_config.py:272
+msgid ""
+"Unable to read config file '{}'.\n"
+"{}"
+msgstr ""
+
+#: ../p4gf_config.py:422
+msgid ""
+"no 'p4gf_config.global.txt' found\n"
+msgstr ""
+
+#: ../p4gf_config.py:423
+msgid "# Missing p4gf_config.global.txt file!"
+msgstr ""
+
+#: ../p4gf_config.py:434
+msgid ""
+"no 'p4gf_config.repo.txt' found\n"
+msgstr ""
+
+#: ../p4gf_config.py:435
+msgid "# Missing p4gf_config.repo.txt file!"
+msgstr ""
+
+#: ../p4gf_config.py:481
+msgid "Created from '{}'"
+msgstr ""
+
+#: ../p4gf_config.py:728
+msgid ""
+"Display the effective global or repository configuration.\n"
+"All comment lines are elided and formatting is normalized per the\n"
+"default behavior of the configparser Python module.\n"
+"The default configuration options will be produced if either of the\n"
+"configuration files is missing.\n"
+msgstr ""
+
+#: ../p4gf_config.py:736
+msgid "name of the repository, or none to display global."
+msgstr ""
+
+#: ../p4gf_config.py:743
+msgid "Unable to read configuration file!"
+msgstr ""
+
+#: ../p4gf_config_validator.py:147
+msgid ""
+"empty config\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:156
+msgid ""
+"unexpected section(s): '{}'\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:162
+msgid ""
+"invalid charset: '{}'\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:170 ../p4gf_config_validator.py:224
+#: ../p4gf_config_validator.py:234
+msgid ""
+"repository configuration option '{}' has illegal value\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:194
+msgid ""
+"error: invalid configuration file: '{}'\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:200
+msgid "error: {}"
+msgstr ""
+
+#: ../p4gf_config_validator.py:214
+msgid ""
+"repository configuration missing branch ID\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:256
+msgid ""
+"repository configuration section [{}] missing view option\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:277
+msgid ""
+"branch views do not have same right hand sides\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:278 ../p4gf_config_validator.py:280
+msgid ""
+"view for branch '{}':\n"
+"{}\n"
+msgstr ""
+
+#: ../p4gf_config_validator.py:324
+msgid ""
+"branch '{branch_id}': Git Fusion internal depot '{depot_name}' not permitted.\n"
+"'"
+msgstr ""
+
+#: ../p4gf_config_validator.py:333
+msgid ""
+"branch '{branch_id}': undefined depot '{depot_name}' not permitted.\n"
+"'"
+msgstr ""
+
+#: ../p4gf_config_validator.py:343
+msgid ""
+"branch '{branch_id}': depot '{depot_name}' type '{depot_type}' not permitted.\n"
+"'"
+msgstr ""
+
+#: ../p4gf_const.py:188
+msgid "Files in the push are locked by '{user}'"
+msgstr ""
+
+#: ../p4gf_const.py:197
+msgid ""
+"\n"
+"Git Fusion repo '{view_name}' does not exist.\n"
+"{nop4client}To define a Git Fusion repo:\n"
+"* create a Perforce client spec '{view_name_p4client}', or\n"
+"* create a Git Fusion repo configuration file\n"
+"  then check it into //P4GF_DEPOT/repos/{view_name}/p4gf_config, or\n"
+"* ask your Git Fusion administrator to\n"
+"  create a Git Fusion repo configuration file\n"
+"  then specify it on the command line to p4gf_init_repo.py --config <file>,\n"
+"  run on the Git Fusion server\n"
+msgstr ""
+
+#: ../p4gf_const.py:210
+msgid ""
+"\n"
+"Git Fusion repo '{view_name}' cannot be created.\n"
+"The views/exclusions for a branch/client allow no paths.\n"
+"To define a Git Fusion repo:\n"
+"* create a Perforce client spec '{view_name_p4client}', or\n"
+"* create a Git Fusion repo configuration file\n"
+"  then check it into //P4GF_DEPOT/repos/{view_name}/p4gf_config, or\n"
+"* ask your Git Fusion administrator to\n"
+"  create a Git Fusion repo configuration file\n"
+"  then specify it on the command line to p4gf_init_repo.py --config <file>,\n"
+"  run on the Git Fusion server\n"
+msgstr ""
+
+#: ../p4gf_context.py:83
+msgid "view not equal to: //{}/..."
+msgstr ""
+
+#: ../p4gf_context.py:90
+msgid ""
+"P4GFContext: Invalid client view for //.git-fusion.\n"
+"{why}\n"
+"{lhs}"
+msgstr ""
+
+#: ../p4gf_context.py:96
+msgid "git-fusion-{0}"
+msgstr ""
+
+#: ../p4gf_context.py:297
+msgid "Failed P4 connect: {}"
+msgstr ""
+
+#: ../p4gf_context.py:648
+msgid "view must contain only one line"
+msgstr ""
+
+#: ../p4gf_context.py:714
+msgid "Canceling: lock '{}' lost."
+msgstr ""
+
+#: ../p4gf_copy_p2g.py:86
+msgid "Cannot use --start={start} when repo already has commits."
+msgstr ""
+
+#: ../p4gf_copy_p2g.py:283
+msgid ""
+"error: git init failed with '{}' for '{}'\n"
+msgstr ""
+
+#: ../p4gf_copy_to_git.py:147
+msgid "error: failed '{}' conversion for '{}#{}'"
+msgstr ""
+
+#: ../p4gf_copy_to_git.py:152
+msgid "unexpected outputText"
+msgstr ""
+
+#: ../p4gf_copy_to_git.py:213
+msgid "Copying files"
+msgstr ""
+
+#: ../p4gf_copy_to_git.py:334
+msgid "Invalid startAt={}: no commit sha1 with a corresponding Perforce changelist number."
+msgstr ""
+
+#: ../p4gf_copy_to_git.py:696
+msgid ""
+"\n"
+"[grafted history before {start_at}]"
+msgstr ""
+
+#: ../p4gf_copy_to_git.py:1380 ../p4gf_copy_to_p4.py:2027
+msgid "Copying changelists..."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:126
+msgid "Non-printable characters not allowed in Perforce: {}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:129
+msgid "bad filename: '{}'"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:132
+msgid "unsupported filename on windows: {}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:140
+msgid "Cannot convert filename to '{}': {}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:291
+msgid "file(s) not in client view"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:293
+msgid "<author>"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:295
+msgid "<pusher>"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:297
+msgid "<unknown>"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:298
+msgid "user '{}' not authorized to submit file(s) in git commit"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:580
+msgid "import failed: {}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:667
+msgid ""
+"warning: overrode lock on '{}' by '{}'\n"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:669
+msgid ""
+"warning: it is advisable to contact them in this regard\n"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:830
+msgid "User '{}' not permitted to commit"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:867
+msgid "Empty commit {sha1} not permitted. Git Fusion branch views must include root to permit empty commits."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:902
+msgid "Cannot commit {sha1} '{gwt_path}' to '{depot_path}'. Paths that overlap multiple Git Fusion branches are read-only. Branches: '{b1}', '{b2}'"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:927
+msgid "Cannot commit {sha1} '{gwt_path}' to '{depot_path}'. Paths not in stream '{stream}' are read-only for branch '{b}'."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:1217 ../p4gf_copy_to_p4.py:1544
+msgid "Commit {} jobs ignored: {}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:1377
+msgid ""
+"\n"
+"Perforce: Swarm review assigned: review/{gbn}/{review_id}\n"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:1735
+msgid "_replace_depot_root_one() found no matching root in old_lhs={}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:1847
+msgid "No Git Fusion branches defined for repo."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:1912
+msgid ""
+"Unable to push.  Stream view changed from:\n"
+"{}\n"
+"to:\n"
+"{}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2081 ../p4gf_copy_to_p4.py:2128
+msgid "Unexpected fast-export command: "
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2118
+msgid "There are files opened by Git Fusion for this repo."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2124
+msgid "Checking commits..."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2135
+msgid "Merge commits are not enabled for this repo."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2137
+msgid "Git branch creation is prohibited for this repo."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2147
+msgid "Git submodules not permitted: path={} commit={}"
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2270
+msgid "Running git fast-export..."
+msgstr ""
+
+#: ../p4gf_copy_to_p4.py:2344
+msgid "Lock lost due to cancellation."
+msgstr ""
+
+#: ../p4gf_create_p4.py:83
+msgid ""
+"error: cannot connect, p4d not running?\n"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:63
+msgid "One of view '{}'s directories is user's home directory!"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:87
+msgid ""
+"File not found error while removing tree: {}\n"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:89
+msgid ""
+"Permission error while removing tree: {}\n"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:163
+msgid "Finding all unreachable cached objects..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:226
+msgid "Finding unreachable cached objects for '{}'..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:301
+msgid "Checking for client '{}'..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:303
+msgid "No such client '{}' defined"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:374
+msgid "Delete repo config for '{}'"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:395
+msgid "incorrect p4 client"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:417
+msgid "Deleting group '{}'..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:421
+msgid "Not deleting group '{group}': Does not exist or '{user}' is not an owner."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:429
+msgid "Obliterating object cache..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:441 ../p4gf_delete_repo.py:478
+msgid "No Git Fusion clients found."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:529
+msgid "Connected to {P4PORT}"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:530
+msgid "Scanning for Git Fusion clients..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:561
+msgid "Removing client files for '{}'..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:564
+msgid "Deleting client '{}'..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:567
+msgid "Deleting client '{}'s workspace..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:570
+msgid "Removing initialization counters..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:588
+msgid "No Git Fusion object client. Nothing to do."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:591
+msgid "Scanning for all unreferenced objects..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:593
+msgid "Removing unreferenced objects..."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:609
+msgid "Deletes Git Fusion repositories and workspaces."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:610
+msgid "remove all known Git mirrors"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:611
+msgid "perform the deletion"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:612
+msgid "print details of deletion process"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:613
+msgid "do not obliterate any objects"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:614
+msgid "obliterate all unreferenced objects"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:615
+msgid "name of view to be deleted"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:621
+msgid ""
+"Missing view names; try adding --all/--gc options.\n"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:655
+msgid "Invoke with --gc to obliterate unreferenced //{} objects"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:658
+msgid "This was report mode. Use -y to make changes."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:660
+msgid "Deleted {:d} files, {:d} groups, {:d} clients, and {:d} counters."
+msgstr ""
+
+#: ../p4gf_delete_repo.py:663
+msgid ""
+"Successfully deleted all repos\n"
+msgstr ""
+
+#: ../p4gf_delete_repo.py:665
+msgid ""
+"Successfully deleted repos:\n"
+"{}"
+msgstr ""
+
+#: ../p4gf_env_config.py:57
+msgid ""
+"Unable to read Git Fusion environment config file '{0}'.\n"
+"{1}"
+msgstr ""
+
+#: ../p4gf_env_config.py:77
+msgid "Git Fusion environment: config file '{0}' has no 'environment' section."
+msgstr ""
+
+#: ../p4gf_fastexport.py:85 ../p4gf_fastexport.py:112
+msgid "error parsing git-fast-export: expected '{}'"
+msgstr ""
+
+#: ../p4gf_fastexport.py:145
+msgid "error parsing git-fast-export: unexpected command '{}'"
+msgstr ""
+
+#: ../p4gf_fastimport.py:94 ../p4gf_init.py:322
+msgid "Counter '{}' not set, using UTC as default. Change this to your Perforce server's time zone."
+msgstr ""
+
+#: ../p4gf_fastimport.py:259
+msgid "Unknown Perforce User <{}>"
+msgstr ""
+
+#: ../p4gf_fastimport_marklist.py:43
+msgid "Changelist numbers must be positive integers."
+msgstr ""
+
+#: ../p4gf_fastimport_marklist.py:45
+msgid "Changelist numbers must repeat or increase, must not decrease."
+msgstr ""
+
+#: ../p4gf_g2p_matrix.py:1687 ../p4gf_g2p_matrix2.py:1844
+msgid ""
+"Cannot integrate: p4 -c {change_num} integ -i -t {flags} {src} {dest}\n"
+"{integ_error_list}"
+msgstr ""
+
+#: ../p4gf_g2p_matrix.py:1952 ../p4gf_g2p_matrix2.py:2108
+msgid ""
+"Unable to resolve files after integrate.\n"
+"{err_list}"
+msgstr ""
+
+#: ../p4gf_g2p_matrix.py:1980 ../p4gf_g2p_matrix2.py:2136
+msgid "BUG: illegal action combination '{}' and '{}'"
+msgstr ""
+
+#: ../p4gf_g2p_matrix.py:2199 ../p4gf_g2p_matrix2.py:2364
+msgid "BUG: p4 integ+resolve created local file '{local_path}' that does not exist in Git commit {commit_sha1}"
+msgstr ""
+
+#: ../p4gf_g2p_matrix.py:2397 ../p4gf_g2p_matrix2.py:2562
+msgid ""
+"BUG: row has p4_request but lacks both paths:\n"
+"{}"
+msgstr ""
+
+#: ../p4gf_g2p_matrix.py:2974 ../p4gf_g2p_matrix2.py:3536
+msgid "Git commit {sha1} prohibited. File '{gdest_path}' cannot co-exist with symlink '{symlink}'."
+msgstr ""
+
+#: ../p4gf_g2p_matrix.py:3084 ../p4gf_g2p_matrix2.py:3651
+msgid "Bug: conflicting actions 'p4 {a}' vs. 'p4 {b}'"
+msgstr ""
+
+#: ../p4gf_g2p_matrix2.py:2648
+msgid "Ghost changelist"
+msgstr ""
+
+#: ../p4gf_g2p_preflight_hook.py:204
+msgid ""
+"preflight-commit rejected: {sha1} {msg}\n"
+msgstr ""
+
+#: ../p4gf_git.py:77
+msgid "git-unpack-objects failed with '{}'"
+msgstr ""
+
+#: ../p4gf_git.py:133
+msgid "malformed SHA1: {}"
+msgstr ""
+
+#: ../p4gf_git_swarm.py:549
+msgid "Cannot create Swarm review for '{ref}'. No such branch: '{gbn}'."
+msgstr ""
+
+#: ../p4gf_git_swarm.py:555
+msgid "Cannot create Swarm review for '{ref}'. Not a fully populated branch in Perforce: '{gbn}'."
+msgstr ""
+
+#: ../p4gf_git_swarm.py:565
+msgid "Cannot amend Swarm review for '{ref}'. No such review: '{review_id}'."
+msgstr ""
+
+#: ../p4gf_git_swarm.py:570
+msgid "Cannot amend Swarm review for '{ref}'. GSReview no longer pending: '{review_id}'."
+msgstr ""
+
+#: ../p4gf_gitmirror.py:122
+msgid ""
+"fork #1 failed: %d (%s)\n"
+msgstr ""
+
+#: ../p4gf_gitmirror.py:136
+msgid ""
+"fork #2 failed: %d (%s)\n"
+msgstr ""
+
+#: ../p4gf_gitmirror.py:406
+msgid "Git Fusion '{view}' copied to Git."
+msgstr ""
+
+#: ../p4gf_gitmirror.py:421
+msgid "No Git objects to submit to Perforce"
+msgstr ""
+
+#: ../p4gf_gitmirror.py:441
+msgid "Submitting new Git commit objects to Perforce"
+msgstr ""
+
+#: ../p4gf_gitmirror.py:446
+msgid "No new Git objects to submit to Perforce"
+msgstr ""
+
+#: ../p4gf_gitmirror.py:697
+msgid "Adding new Git commit objects to Perforce..."
+msgstr ""
+
+#: ../p4gf_gitmirror.py:769
+msgid "Deleting git branch '{0}'"
+msgstr ""
+
+#: ../p4gf_gitmirror_worker.py:30
+msgid "usage: p4gf_gitmirror_worker.py <repo> <work-queue-file>"
+msgstr ""
+
+#: ../p4gf_gitmirror_worker.py:154
+msgid "Git Fusion '{view}' trees copied to Git."
+msgstr ""
+
+#: ../p4gf_http_server.py:229
+msgid "Missing PATH value"
+msgstr ""
+
+#: ../p4gf_http_server.py:229 ../p4gf_http_server.py:258
+#: ../p4gf_http_server.py:294 ../p4gf_http_server.py:348
+#: ../p4gf_http_server.py:411
+msgid "500 Internal Server Error"
+msgstr ""
+
+#: ../p4gf_http_server.py:230
+msgid "Missing PATH_INFO value"
+msgstr ""
+
+#: ../p4gf_http_server.py:230 ../p4gf_http_server.py:231
+#: ../p4gf_http_server.py:232 ../p4gf_http_server.py:271
+#: ../p4gf_http_server.py:309
+msgid "400 Bad Request"
+msgstr ""
+
+#: ../p4gf_http_server.py:231
+msgid "Missing QUERY_STRING value"
+msgstr ""
+
+#: ../p4gf_http_server.py:232
+msgid "Missing REQUEST_METHOD value"
+msgstr ""
+
+#: ../p4gf_http_server.py:233
+msgid "401 Unauthorized"
+msgstr ""
+
+#: ../p4gf_http_server.py:233
+msgid "Missing REMOTE_USER value"
+msgstr ""
+
+#: ../p4gf_http_server.py:272
+msgid ""
+"Missing required repository name in URL\n"
+msgstr ""
+
+#: ../p4gf_http_server.py:305
+msgid "200 OK"
+msgstr ""
+
+#: ../p4gf_http_server.py:328
+msgid "403 Forbidden"
+msgstr ""
+
+#: ../p4gf_http_server.py:345
+msgid "404 Not Found"
+msgstr ""
+
+#: ../p4gf_http_server.py:473
+msgid "Headers already set!"
+msgstr ""
+
+#: ../p4gf_http_server.py:700
+msgid ""
+"p4gf_http_server.py handles http(s) requests. Typically it\n"
+"is run via a web server and protected by some form of user\n"
+"authentication. The environment variable REMOTE_USER must be set to\n"
+"the name of a valid Perforce user, which is taken to be the user\n"
+"performing a pull or push operation.\n"
+msgstr ""
+
+#: ../p4gf_http_server.py:706
+msgid ""
+"If the --user argument is given then a simple HTTP server\n"
+"will be started, listening on the port specified by --port. The\n"
+"REMOTE_USER value will be set to the value given to the --user\n"
+"argument. To stop the server, send a terminating signal to the process.\n"
+msgstr ""
+
+#: ../p4gf_http_server.py:714
+msgid "value for REMOTE_USER variable"
+msgstr ""
+
+#: ../p4gf_http_server.py:716
+msgid "port on which to listen (default 8000)"
+msgstr ""
+
+#: ../p4gf_http_server.py:724
+msgid "Serving on port {}..."
+msgstr ""
+
+#: ../p4gf_init.py:67
+msgid "Creating initial '{filename}' file via p4gf_init.py"
+msgstr ""
+
+#: ../p4gf_init.py:73
+msgid "File '{}' created."
+msgstr ""
+
+#: ../p4gf_init.py:75
+msgid "File '{}' already exists."
+msgstr ""
+
+#: ../p4gf_init.py:90
+msgid ""
+"# Git Fusion user map\n"
+"# Format: Perforce-user [whitespace] Email-addr [whitespace] \"Full-name\"\n"
+"#joe joe@example.com \"Joe User\""
+msgstr ""
+
+#: ../p4gf_init.py:117
+msgid "Old client '{}' deleted."
+msgstr ""
+
+#: ../p4gf_init.py:121
+msgid "Created by Perforce Git Fusion"
+msgstr ""
+
+#: ../p4gf_init.py:125
+msgid "Client '{}' created."
+msgstr ""
+
+#: ../p4gf_init.py:130
+msgid "Client '{}' updated."
+msgstr ""
+
+#: ../p4gf_init.py:132
+msgid "Client '{}' already exists."
+msgstr ""
+
+#: ../p4gf_init.py:141
+msgid "error: Git Fusion 2012.2 artifacts detected. Upgrade required for use with 2013.1+. Please contact your administrator."
+msgstr ""
+
+#: ../p4gf_init.py:238
+msgid "error: {spec_type} '{spec_id}' does not exist. Please contact your administrator."
+msgstr ""
+
+#: ../p4gf_init.py:246
+msgid "Global permission group '{}' created."
+msgstr ""
+
+#: ../p4gf_init.py:248
+msgid "Global permission group '{}' already exists."
+msgstr ""
+
+#: ../p4gf_init.py:252
+msgid "Default permission counter '{}' set to '{}'."
+msgstr ""
+
+#: ../p4gf_init.py:256
+msgid "Default permission counter '{}' already exists."
+msgstr ""
+
+#: ../p4gf_init.py:286
+msgid "Protects table set."
+msgstr ""
+
+#: ../p4gf_init.py:297
+msgid "# Git Fusion generated"
+msgstr ""
+
+#: ../p4gf_init.py:313
+msgid "Global config file '{}' created."
+msgstr ""
+
+#: ../p4gf_init.py:316
+msgid "Global config file '{}' already exists."
+msgstr ""
+
+#: ../p4gf_init.py:357
+msgid "Old 2012.2 counter not present."
+msgstr ""
+
+#: ../p4gf_init.py:359
+msgid "Permissions already initialized. Not changing."
+msgstr ""
+
+#: ../p4gf_init.py:376
+msgid "Client and usermap already initialized. Not changing."
+msgstr ""
+
+#: ../p4gf_init.py:390
+msgid "Global config file already initialized. Not changing."
+msgstr ""
+
+#: ../p4gf_init.py:393
+msgid "Git Fusion Machinery"
+msgstr ""
+
+#: ../p4gf_init.py:394
+msgid "nobody@example.com"
+msgstr ""
+
+#: ../p4gf_init.py:399
+msgid "Initializes a Git Fusion server."
+msgstr ""
+
+#: ../p4gf_init_repo.py:127 ../p4gf_read_permission.py:366
+msgid ""
+"p4 client '{0}' does not exist\n"
+msgstr ""
+
+#: ../p4gf_init_repo.py:219
+msgid "Created by Perforce Git Fusion for work in '{view}'."
+msgstr ""
+
+#: ../p4gf_init_repo.py:267
+msgid ""
+"\n"
+"Error while creating Git branch '{branch}' for repo '{repo}'\n"
+"Check the branch view specifications in Git Fusion: {config_path}\n"
+"Details: {error_details}"
+msgstr ""
+
+#: ../p4gf_init_repo.py:331
+msgid ""
+"The referenced client view contains implicit exclusions.\n"
+"The Git Fusion config will contain these as explicit exclusions."
+msgstr ""
+
+#: ../p4gf_init_repo.py:353
+msgid "Copying changes from '{}'..."
+msgstr ""
+
+#: ../p4gf_init_repo.py:355
+msgid "Copying completed."
+msgstr ""
+
+#: ../p4gf_init_repo.py:357
+msgid "No changes above '{}'."
+msgstr ""
+
+#: ../p4gf_init_repo.py:369
+msgid "Missing '{}' file!"
+msgstr ""
+
+#: ../p4gf_init_repo.py:371
+msgid "Configure and populate Git Fusion repo."
+msgstr ""
+
+#: ../p4gf_init_repo.py:373
+msgid "p4gf_init_repo.py [options] <name>"
+msgstr ""
+
+#: ../p4gf_init_repo.py:384
+msgid "Cannot use both --start and --noclone"
+msgstr ""
+
+#: ../p4gf_init_repo.py:387
+msgid "Cannot use both --config and --charset"
+msgstr ""
+
+#: ../p4gf_init_repo.py:389
+msgid "Cannot use both --config and --p4client"
+msgstr ""
+
+#: ../p4gf_init_repo.py:399 ../p4gf_init_repo.py:405
+msgid "Invalid --start value: {}"
+msgstr ""
+
+#: ../p4gf_init_repo.py:408
+msgid "Could not find changes >= '{}'"
+msgstr ""
+
+#: ../p4gf_init_repo.py:457
+msgid "error: missing config file '{}'"
+msgstr ""
+
+#: ../p4gf_init_repo.py:465
+msgid "error: invalid charset: {}"
+msgstr ""
+
+#: ../p4gf_init_repo.py:469
+msgid "Initializing '{}'..."
+msgstr ""
+
+#: ../p4gf_init_repo.py:474
+msgid "Initialization complete."
+msgstr ""
+
+#: ../p4gf_init_repo.py:487
+msgid "Error occurred: {}"
+msgstr ""
+
+#: ../p4gf_lock.py:138
+msgid ""
+"Waiting for access to repository...\n"
+msgstr ""
+
+#: ../p4gf_lock.py:157 ../p4gf_lock.py:634 ../p4gf_lock.py:740
+msgid "Unable to acquire lock: {}"
+msgstr ""
+
+#: ../p4gf_lock.py:159 ../p4gf_lock.py:636 ../p4gf_lock.py:742
+msgid ""
+"\n"
+"Lock holder: {}"
+msgstr ""
+
+#: ../p4gf_lock.py:161
+msgid ""
+"\n"
+"Please try again after {0:d} minute(s)."
+msgstr ""
+
+#: ../p4gf_log.py:204
+msgid ""
+"Git Fusion: unrecognized log handler: {}\n"
+msgstr ""
+
+#: ../p4gf_log.py:246
+msgid ""
+"Git Fusion: log configuration error, using defaults: {}\n"
+msgstr ""
+
+#: ../p4gf_log.py:478
+msgid ""
+"Git Fusion: Unable to configure log.\n"
+msgstr ""
+
+#: ../p4gf_object_type.py:253
+msgid "index out of bounds"
+msgstr ""
+
+#: ../p4gf_object_type.py:268 ../p4gf_object_type.py:284
+msgid "only append operations allowed"
+msgstr ""
+
+#: ../p4gf_object_type.py:272
+msgid "special list type, no deletions"
+msgstr ""
+
+#: ../p4gf_p4file.py:59
+msgid "Error decoding file path: {}"
+msgstr ""
+
+#: ../p4gf_p4filetype.py:96
+msgid "BUG: Cannot remove multiple modifier chars: {}"
+msgstr ""
+
+#: ../p4gf_poll.py:50
+msgid "Update Git Fusion's internal repo(s) with recent changes from Perforce."
+msgstr ""
+
+#: ../p4gf_poll.py:52
+msgid "Update all repos"
+msgstr ""
+
+#: ../p4gf_poll.py:54
+msgid "name of view to update"
+msgstr ""
+
+#: ../p4gf_poll.py:59
+msgid ""
+"Missing view names; try adding --all option.\n"
+msgstr ""
+
+#: ../p4gf_poll.py:66
+msgid ""
+"One or more views are not defined on this server:\n"
+"\t"
+msgstr ""
+
+#: ../p4gf_poll.py:69
+msgid ""
+"Defined views:\n"
+"\t"
+msgstr ""
+
+#: ../p4gf_pre_receive_hook.py:58
+msgid ""
+"Branch creation is not authorized for this repo.\n"
+"Rejecting push of '{0}'."
+msgstr ""
+
+#: ../p4gf_pre_receive_hook.py:150
+msgid "Git Fusion pre-receive hook."
+msgstr ""
+
+#: ../p4gf_pre_receive_hook.py:201
+msgid "Cannot delete branches defined in Git Fusion repo config file: {}"
+msgstr ""
+
+#: ../p4gf_proc.py:362
+msgid "Error running: {}"
+msgstr ""
+
+#: ../p4gf_progress_reporter.py:80
+msgid ""
+"Perforce: {}\n"
+msgstr ""
+
+#: ../p4gf_progress_reporter.py:135
+msgid "\rPerforce: %3d%% (%{ct}d/%{ct}d) %s"
+msgstr ""
+
+#: ../p4gf_progress_reporter.py:168
+msgid "\rPerforce: %s: %d"
+msgstr ""
+
+#: ../p4gf_protect.py:66
+msgid "Unknown permission requested: {}"
+msgstr ""
+
+#: ../p4gf_read_permission.py:38
+msgid "User '{0}' denied read access to repo '{1}' by Perforce."
+msgstr ""
+
+#: ../p4gf_read_permission.py:41
+msgid "No read permissions exist for these views"
+msgstr ""
+
+#: ../p4gf_read_permission.py:236
+msgid ""
+"\n"
+"     denied view by missing inclusion: {0}"
+msgstr ""
+
+#: ../p4gf_read_permission.py:246
+msgid ""
+"\n"
+"     denied view by exclusion: {0}"
+msgstr ""
+
+#: ../p4gf_read_permission.py:356
+msgid ""
+"\n"
+"Git Fusion is not authorized for user read-access check."
+msgstr ""
+
+#: ../p4gf_server_common.py:83
+msgid "git-fusion-user not granted sufficient privileges."
+msgstr ""
+
+#: ../p4gf_server_common.py:117
+msgid "Git Fusion is shutting down. Please contact your admin."
+msgstr ""
+
+#: ../p4gf_server_common.py:127
+msgid "Git Fusion submit triggers are not installed. Please contact your admin."
+msgstr ""
+
+#: ../p4gf_server_common.py:130
+msgid "Git Fusion submit triggers need updating. Please contact your admin."
+msgstr ""
+
+#: ../p4gf_server_common.py:165
+msgid "User '{user}' not authorized for '{command}' on '{view}'."
+msgstr ""
+
+#: ../p4gf_server_common.py:194
+msgid ""
+"file 'help.txt' not found\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:202
+msgid ""
+"Server address: {}\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:215
+msgid ""
+"no repositories found\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:220
+msgid ""
+"waiting for mirror..\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:223 ../p4gf_server_common.py:230
+msgid ""
+"mirror up-to-date\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:228
+msgid ""
+"mirroring trees\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:235
+msgid ""
+"Available features:\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:243
+msgid ""
+"Enabled features for repo '{}':\n"
+msgstr ""
+
+#: ../p4gf_server_common.py:255
+msgid ""
+"Git Fusion: unrecognized special command.\n"
+"Valid commands are: {}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:108
+msgid ""
+"Git Fusion Submit Trigger cannot find p4 binary: '{0}'\n"
+"Please update this trigger using the full path to p4"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:115
+msgid "Please edit p4gf_submit_trigger.py and set P4GF_P4_BIN to a path without spaces."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:187
+msgid ""
+"\n"
+"Files in the changelist are locked by Git Fusion user '{0}'."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:188
+msgid "Git Fusion pre-submit trigger failed."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:189
+msgid "Git Fusion post-submit trigger failed."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:190
+msgid ""
+"\n"
+"Git Fusion '{0}' trigger failed: {1}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:191
+msgid "user: '{0}' changelist: {1}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:192
+msgid "Git Fusion trigger missing arguments."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:193
+msgid "p4gf_submit_trigger.py"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:194
+msgid "p4gf_config file submitted, but will not work for Git Fusion."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:207
+msgid ""
+"\n"
+"\n"
+"    Git Fusion requires a submit trigger to be installed on your Perforce server\n"
+"    to properly support atomic commits from Git.\n"
+"\n"
+"    Installing Triggers\n"
+"    -------------------\n"
+"    Install triggers for each Perforce server configured for Git Fusion:\n"
+"\n"
+"    1) Copy 'p4gf_submit_trigger.py' to your Perforce server machine.\n"
+"    2) These triggers require Python 2.6+ or Python 3.2+ on the\n"
+"       Perforce server machine.\n"
+"    3) (optional) If '/usr/bin/env python' is not a path to Python on\n"
+"       the Perforce server machine, edit the top line of\n"
+"       'p4gf_submit_trigger.py' to a path that works.\n"
+"    4) As a Perforce super user run 'p4 triggers' and add the\n"
+"       following entries:\n"
+"       (See --generate-trigger-entries option below to generate\n"
+"        trigger entries.)\n"
+"{MSG_TRIGGER_SPEC}\n"
+"\n"
+"    Logging in Perforce users\n"
+"    -------------------------\n"
+"    p4gf_super_init.py on the Git Fusion server creates these users:\n"
+"        git-fusion-user\n"
+"        git-fusion-reviews-<server-id>\n"
+"        git-fusion-reviews--non-gf\n"
+"        git-fusion-reviews--all-gf\n"
+"\n"
+"    After running p4gf_super_init.py, you must log these users into the\n"
+"    Perforce server:\n"
+"\n"
+"    1) Set a password with 'p4 passwd'\n"
+"    2) Log that user in with 'p4 login':\n"
+"        - from the Git Fusion unix account on the Git Fusion server.\n"
+"        - from the OS account on the Perforce server where the\n"
+"          triggers run.\n"
+"\n"
+"    Installing This Trigger\n"
+"    -----------------------\n"
+"    To generate a sample text file suitable for use as a 'p4 triggers' spec:\n"
+"\n"
+"        {MSG_EXAMPLE_UNIX}\n"
+"\n"
+"        (for Windows):\n"
+"        {MSG_EXAMPLE_DOS}\n"
+"\n"
+"    Copy the output into the 'p4 trigger' spec.\n"
+"\n"
+"    Tell Git Fusion that Triggers Are Installed\n"
+"    -------------------------------------------\n"
+"    To tell Git Fusion that these triggers are installed, and\n"
+"    thus avoid 'triggers are not installed' or 'triggers need updating'\n"
+"    error messages:\n"
+"\n"
+"        python p4gf_submit_trigger.py --set-version-counter P4PORT\n"
+"\n"
+"    Clearing Locks\n"
+"    --------------\n"
+"    To clear any locks created by previous runs of this trigger:\n"
+"\n"
+"        python p4gf_submit_trigger.py --reset P4PORT [superuser]\n"
+"\n"
+"    This removes all 'p4 reviews' and 'p4 counters -u' data stored\n"
+"    by this trigger.\n"
+"\n"
+"    Defining Depot Paths Managed by Git Fusion\n"
+"    ------------------------------------------\n"
+"    To rebuild the list of Perforce depot paths currently part of any\n"
+"    Git Fusion repo:\n"
+"\n"
+"        python p4gf_submit_trigger.py --rebuild-all-gf-reviews P4PORT [superuser]\n"
+"\n"
+"    By default this command runs as Perforce user 'git-fusion-reviews--all-gf'.\n"
+"    The optional superuser parameter must be a Perforce super user.\n"
+"\n"
+"\n"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:324
+msgid "Unrecognized or invalid arguments."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:327
+msgid ""
+"\n"
+"Usage:\n"
+"    p4gf_submit_trigger.py --generate-trigger-entries \"/absolute/pathto/python\" \"/absolute/pathto/p4gf_submit_trigger.py\"\n"
+"    p4gf_submit_trigger.py --set-version-counter P4PORT\n"
+"    p4gf_submit_trigger.py --reset P4PORT [superuser]\n"
+"    p4gf_submit_trigger.py --rebuild-all-gf-reviews P4PORT [superuser]\n"
+"    p4gf_submit_trigger.py --help\n"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:338
+msgid "    args: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:468
+msgid "Command failed: %s"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:561
+msgid ""
+"Unicode server permits only unicode enabled clients.\n"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:575
+msgid "Error calling Popen with cmd: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:576
+msgid "Error: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:601
+msgid "Cannot connect to P4PORT: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:611
+msgid ""
+"Git Fusion Submit Trigger user '{0}' is not logged in.\n"
+"{1}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:935
+msgid "Key error in p4 opened: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1198 ../p4gf_submit_trigger.py:1350
+#: ../p4gf_submit_trigger.py:1405
+msgid "Exception: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1222 ../p4gf_submit_trigger.py:1232
+msgid ""
+"Unable to read config file {0}.\n"
+"{1}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1260
+msgid "didn't find end of quote : for '{0}' in '{1}'"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1340
+msgid "Rebuild '{0}' Reviews: adding repo views for '{1}'"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1447
+msgid "Removing all non-Git Fusion initiated reviews and counters"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1466 ../p4gf_submit_trigger.py:1467
+#: ../p4gf_super_init.py:472 ../p4gf_super_init.py:475
+msgid "Setting '{0}' = '{1}'"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1478
+msgid "Server port '{0}' is not numeric. Stopping."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1479
+msgid "args: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1493
+msgid "'{0}' is not super user. Exiting."
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1566
+msgid "Command line options parse error: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1652
+msgid "Invalid trigger type: {0}"
+msgstr ""
+
+#: ../p4gf_submit_trigger.py:1687
+msgid "Python 2.6+ or Python 3.2+ is required"
+msgstr ""
+
+#: ../p4gf_super_init.py:62
+msgid "To cancel: CTL-C + ENTER."
+msgstr ""
+
+#: ../p4gf_super_init.py:63
+msgid "Password: "
+msgstr ""
+
+#: ../p4gf_super_init.py:66
+msgid "Retype password: "
+msgstr ""
+
+#: ../p4gf_super_init.py:70
+msgid "Passwords do not match. Try again."
+msgstr ""
+
+#: ../p4gf_super_init.py:81
+msgid "Unable to run 'p4 passwd -P xxx -u {0}'."
+msgstr ""
+
+#: ../p4gf_super_init.py:94
+msgid "Unable to run 'p4 protect -o'."
+msgstr ""
+
+#: ../p4gf_super_init.py:109
+msgid "Unable to run 'p4 triggers -o'."
+msgstr ""
+
+#: ../p4gf_super_init.py:132
+msgid "Git Fusion server IDs: {0}"
+msgstr ""
+
+#: ../p4gf_super_init.py:180 ../p4gf_super_init.py:195
+msgid "Git Fusion server ID already set to '{0}'."
+msgstr ""
+
+#: ../p4gf_super_init.py:184
+msgid ""
+"Git Fusion server ID is already assigned: '{0}' set on host on '{1}'.\n"
+"Retry with a different --id server_id."
+msgstr ""
+
+#: ../p4gf_super_init.py:189
+msgid ""
+"If you are certain no other Git Fusion instance is using this server ID,\n"
+"you may overrule this conflict and set the local server-id file to\n"
+"'{0}' with:\n"
+"    p4gf_super_init.py --force"
+msgstr ""
+
+#: ../p4gf_super_init.py:198
+msgid "This Git Fusion's server ID is unset. Stopping."
+msgstr ""
+
+#: ../p4gf_super_init.py:212
+msgid "Git Fusion server ID set to '{0}' in file '{1}'"
+msgstr ""
+
+#: ../p4gf_super_init.py:221
+msgid ""
+"Set one password for Perforce users 'git-fusion-user'\n"
+"and 'git-fusion-reviews-*'."
+msgstr ""
+
+#: ../p4gf_super_init.py:226
+msgid "Enter a new password for Perforce user '{0}'."
+msgstr ""
+
+#: ../p4gf_super_init.py:231
+msgid ""
+"\n"
+" Stopping. Passwords not set."
+msgstr ""
+
+#: ../p4gf_super_init.py:238
+msgid "Empty password. Not setting passwords."
+msgstr ""
+
+#: ../p4gf_super_init.py:244
+msgid "Password set for Perforce user '{}'."
+msgstr ""
+
+#: ../p4gf_super_init.py:267
+msgid "Git Fusion user '{0}' does not exist."
+msgstr ""
+
+#: ../p4gf_super_init.py:268
+msgid "Git Fusion user '{0}' exists."
+msgstr ""
+
+#: ../p4gf_super_init.py:275
+msgid "User '{}' created."
+msgstr ""
+
+#: ../p4gf_super_init.py:277
+msgid "User '{}' already exists. Not creating."
+msgstr ""
+
+#: ../p4gf_super_init.py:306
+msgid "Group '{}' updated."
+msgstr ""
+
+#: ../p4gf_super_init.py:308 ../p4gf_super_init.py:311
+msgid "Group '{}' already up to date."
+msgstr ""
+
+#: ../p4gf_super_init.py:315
+msgid "Group '{}' created."
+msgstr ""
+
+#: ../p4gf_super_init.py:323
+msgid "Depot '{}' created."
+msgstr ""
+
+#: ../p4gf_super_init.py:325
+msgid "Depot '{}' already exists. Not creating."
+msgstr ""
+
+#: ../p4gf_super_init.py:338
+msgid "Protect table empty. Setting...."
+msgstr ""
+
+#: ../p4gf_super_init.py:345
+msgid "Protect table already grants 'admin' to user '{}'. Not changing"
+msgstr ""
+
+#: ../p4gf_super_init.py:357
+msgid "Protect table already grants 'review' to users 'git-fusion-reviews-*'.Not changing"
+msgstr ""
+
+#: ../p4gf_super_init.py:367
+msgid "Protect table modified. User '{}' granted admin permission."
+msgstr ""
+
+#: ../p4gf_super_init.py:377
+msgid "Configurable '{}' already set to 1. Not setting."
+msgstr ""
+
+#: ../p4gf_super_init.py:382
+msgid "Configurable '{}' set to 1."
+msgstr ""
+
+#: ../p4gf_super_init.py:393
+msgid "Unable to find and execute '{0}'"
+msgstr ""
+
+#: ../p4gf_super_init.py:399
+msgid "Unable to rebuild the P4GF reviews as user '{}'."
+msgstr ""
+
+#: ../p4gf_super_init.py:400
+msgid "Please rebuild the P4GF reviews as another user."
+msgstr ""
+
+#: ../p4gf_super_init.py:410
+msgid "Error '{ec}' returned from command '{cmd}'"
+msgstr ""
+
+#: ../p4gf_super_init.py:418
+msgid "Error rebuilding all GF reviews, unable to locate and/or run '{0}'"
+msgstr ""
+
+#: ../p4gf_super_init.py:424
+msgid "Re-setting 'git-fusion-reviews--all-gf' with {0:d} repo views"
+msgstr ""
+
+#: ../p4gf_super_init.py:479
+msgid "Git Fusion triggers are up to date."
+msgstr ""
+
+#: ../p4gf_super_init.py:493
+msgid ""
+"            The Perforce service's case-handling policy is not set to 'sensitive',\n"
+"            which means any files introduced via Git whose names differ only by case may\n"
+"            result in data loss or errors during push. It is strongly advised to set the\n"
+"            case-handling policy to 'sensitive'. To bypass this check, pass --ignore-case\n"
+"            when invoking this script.\n"
+"            "
+msgstr ""
+
+#: ../p4gf_super_init.py:539
+msgid "Failed to connect to P4."
+msgstr ""
+
+#: ../p4gf_super_init.py:571
+msgid "Creates Git Fusion user, depot, and protect entries."
+msgstr ""
+
+#: ../p4gf_super_init.py:572
+msgid "P4PORT of server"
+msgstr ""
+
+#: ../p4gf_super_init.py:573
+msgid "P4USER of user with super permissions."
+msgstr ""
+
+#: ../p4gf_super_init.py:575
+msgid "Set this Git Fusion server's unique id"
+msgstr ""
+
+#: ../p4gf_super_init.py:576
+msgid "Display all Git Fusion server ids"
+msgstr ""
+
+#: ../p4gf_super_init.py:577
+msgid "Do not check for case-handling policy in server."
+msgstr ""
+
+#: ../p4gf_super_init.py:578
+msgid "Force set local server-id file when server-id already registered in Git Fusion."
+msgstr ""
+
+#: ../p4gf_super_init.py:580
+msgid "Password for 'git-fusion-user' and 'git-fusion-reviews-*'"
+msgstr ""
+
+#: ../p4gf_super_init.py:581
+msgid "Do not prompt for nor set password for 'git-fusion-user' and 'git-fusion-reviews-*'"
+msgstr ""
+
+#: ../p4gf_tag.py:51
+msgid ""
+"Tag '{}' of annotated tag will not be stored in Perforce\n"
+msgstr ""
+
+#: ../p4gf_tag.py:146
+msgid "illegal characters (@#*,...%%) in tag name: '{}'"
+msgstr ""
+
+#: ../p4gf_tag.py:167
+msgid "Ignoring double-zero pre-receive-tuple line"
+msgstr ""
+
+#: ../p4gf_tag.py:175
+msgid "Tag '{}' references unknown objects. Push commits before tags."
+msgstr ""
+
+#: ../p4gf_tag.py:178
+msgid ""
+"Tag '{}' of tree will not be stored in Perforce\n"
+msgstr ""
+
+#: ../p4gf_tag.py:181
+msgid ""
+"Tag '{}' of blob will not be stored in Perforce\n"
+msgstr ""
+
+#: ../p4gf_tag.py:191
+msgid "Updates were rejected because the tag already exists in the remote."
+msgstr ""
+
+#: ../p4gf_tag.py:201
+msgid "Git Fusion '{repo}' tag changes"
+msgstr ""
+
+#: ../p4gf_temp_p4branch_mapping.py:30
+msgid "Temporary mapping created during 'git push'."
+msgstr ""
+
+#: ../p4gf_translate.py:131
+msgid "Translate Git Fusion repo name formats."
+msgstr ""
+
+#: ../p4gf_translate.py:132
+msgid "p4gf_translate.py   --type git|repo|p4   <name>"
+msgstr ""
+
+#: ../p4gf_translate.py:139
+msgid "Unknown input type '{bad}', must be one of [{good}.]"
+msgstr ""
+
+#: ../p4gf_usermap.py:238
+msgid "Unable to read '{usermap}'. Illegal character '{c}' in email address '{email}'"
+msgstr ""
+
+#: ../p4gf_usermap.py:255
+msgid "Searches for an email address in the user map."
+msgstr ""
+
+#: ../p4gf_usermap.py:257
+msgid "email address to find"
+msgstr ""
+
+#: ../p4gf_usermap.py:263
+msgid "p4gf_usermap initialization failed"
+msgstr ""
+
+#: ../p4gf_usermap.py:274
+msgid "Found user '{}' <{}>"
+msgstr ""
+
+#: ../p4gf_usermap.py:277
+msgid ""
+"No such user found: '{}'\n"
+msgstr ""
+
+#: ../p4gf_util.py:81
+msgid "displays version information and exits"
+msgstr ""
+
+#: ../p4gf_util.py:322
+msgid "Git Fusion Reviews"
+msgstr ""
+
+#: ../p4gf_util.py:333
+msgid "Git Fusion Reviews Non-GF"
+msgstr ""
+
+#: ../p4gf_util.py:344
+msgid "Git Fusion Reviews Non-GF Union"
+msgstr ""
+
+#: ../p4gf_util.py:356
+msgid "Git Fusion data storage."
+msgstr ""
+
+#: ../p4gf_util.py:435
+msgid "Gitr Fusion: Not a valid client name: '{view}'"
+msgstr ""
+
+#: ../p4gf_util.py:835
+msgid "Depot path {dp} not in client view client={cn}"
+msgstr ""
+
+#: ../p4gf_util.py:847
+msgid "Bug: depot_to_local_path() called with neither a client spec nor a p4 connection. depot_file={}"
+msgstr ""
+
+#: ../p4gf_util.py:875
+msgid "Created by Git Fusion"
+msgstr ""
+
+#: ../p4gf_util.py:991
+msgid "Change already submitted"
+msgstr ""
+
+#: ../p4gf_util.py:1043
+msgid "Creating initial '{filename}' file."
+msgstr ""
+
+#: ../p4gf_util.py:1066
+msgid "Update '{filename}'."
+msgstr ""
+
+#: ../p4gf_util.py:1840
+msgid "object is not a commit or tree"
+msgstr ""
+
+#: ../p4gf_util_26.py:69
+msgid "server-id not set. Run p4gf_super_init.py and try again."
+msgstr ""
+
+#: ../p4gf_util_26.py:91
+msgid "Git Fusion is missing '{0}' file '{1}'."
+msgstr ""
+
+#: ../p4gf_util_26.py:93
+msgid ""
+" Please contact your administrator.\n"
+msgstr ""
+
+#: ../p4gf_verbosity.py:54
+msgid "Reporting verbosity."
+msgstr ""
+
+#: ../p4gf_verbosity.py:56
+msgid "Report only errors. Same as --verbose QUIET"
+msgstr ""
+
+#: ../p4gf_verbosity.py:75
+msgid "Unknown --verbose value '{val}'. Try '{good}'"
+msgstr ""
+
+#: ../p4gf_verbosity.py:81
+msgid "args={}"
+msgstr ""
+
+#: ../p4gf_version.py:36
+msgid "Git Fusion version information."
+msgstr ""
+
+#: ../p4gf_version_26.py:280
+msgid "Unable to determine Git version"
+msgstr ""
+
+#: ../p4gf_version_26.py:283
+msgid "Git version {0} or greater required."
+msgstr ""
+
+#: ../p4gf_version_26.py:450
+msgid ""
+"Unsupported p4d version: {actual}\n"
+"Git Fusion requires version {req_v}/{req_ch} or later"
+msgstr ""
+
+#: ../p4gf_version_26.py:530
+msgid "Git Fusion version information when running Python 2.6."
+msgstr ""
+
+#: ../p4gf_view_dirs.py:31
+msgid "Empty p4gf_dir"
+msgstr ""
+
+#: ../p4gf_view_dirs.py:33
+msgid "Empty view_name"
+msgstr ""
+

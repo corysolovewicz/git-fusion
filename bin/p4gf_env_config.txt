@@ -1,0 +1,68 @@
+#  Git Fusion os environment configuration file.
+#  The optional shell environment variable P4GF_CONFIG contains the path
+#  to a file which configures the Git Fusion runtime environment.
+#  If P4GF_CONFIG does not exist Git Fusion will inherit its runtime environment:
+#  A valid P4GF_CONFIG contains values to be set for the runtime os environment for a single Git Fusion instance.
+#  Mutiple Git Fusion instances on a single system require unique values for P4GF_CONFIG
+#  because P4GF_HOME must be unique per GF instance
+#
+#
+#  All non-P4 shell environment settings specified will be set for Git Fusion.
+#  You may unset a non-P4 shell variable by setting to 'unset'.
+#  All P4 environment variables not explicitly set will be unset for the Git Fusion process.
+#  P4GF_CONFIG is always unset as this file is intended to override it.
+#  
+#  The following shell variables may not be set here:
+#    PATH
+#    LANG
+#    P4CONFIG
+#
+#    Environment variables used by Perforce:
+#
+#    Variable         Defines                         More information
+#    --------         -------                         ------------------------
+#    P4CHARSET        Client's local character set    p4 help charset
+#    P4COMMANDCHARSET Client's local character set
+#                     (for command line operations)   p4 help charset
+#    P4CLIENT         Name of client workspace        p4 help client
+#    P4CLIENTPATH     Directories client can access   Perforce Command Reference
+#    P4CONFIG         Name of configuration file      Perforce Command Reference
+#    P4DIFF           Diff program to use on client   p4 help diff
+#    P4DIFFUNICODE    Diff program to use on client   p4 help diff
+#    P4EDITOR         Editor invoked by p4 commands   p4 help change, etc
+#    P4HOST           Name of host computer           p4 help usage
+#    P4IGNORE         Name of ignore file             Perforce Command Reference
+#    P4LANGUAGE       Language for text messages      p4 help usage
+#    P4LOGINSSO       Client side credentials script  p4 help triggers
+#    P4MERGE          Merge program to use on client  p4 help resolve
+#    P4MERGEUNICODE   Merge program to use on client  p4 help resolve
+#    P4PAGER          Pager for 'p4 resolve' output   p4 help resolve
+#    P4PASSWD         User password passed to server  p4 help passwd
+#    P4PORT           Port to which client connects   p4 help info
+#    P4SSLDIR         SSL server credential directory Perforce Command Reference
+#    P4TICKETS        Location of tickets file        Perforce Command Reference
+#    P4TRUST          Location of ssl trust file      Perforce Command Reference
+#    P4USER           Perforce user name              p4 help usage
+#    PWD              Current working directory       p4 help usage
+#    TMP, TEMP        Directory for temporary files   Perforce Command Reference
+#
+#  Example config file
+#
+#  [environment]
+#   P4GF_HOME:
+#       Required
+#       File system location of the working directory of the Git Fusion instance.
+#       With no configuration file this defaults to $HOME/.git-fusion
+#   P4PORT
+#       Required
+#   GIT_BIN
+#       must be absolute path to 'git' binary or 'git'
+#       defaults to 'git' to be located by system $PATH
+#       
+#
+#   P4somevar: 
+#       Any P4 variable - excluding P4CONFIG
+#   SHELLVAR:
+#       Any shell variable
+#       unset by assigning to 'unset'
+#

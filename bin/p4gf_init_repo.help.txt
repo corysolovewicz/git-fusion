@@ -1,0 +1,55 @@
+p4gf_init_repo.py -- Configure and populate a new Git Fusion repo.
+
+    p4gf_init_repo.py [options] <repo-name>
+    
+    <repo-name>          The name of this new Git Fusion repo.
+    
+                    if --config <file> omitted, this <name> must also be
+                    the name of an existing Perforce client spec, whose
+                    'View' field defines how the Perforce depot tree
+                    will map to this new Git repo's work tree. After
+                    p4gf_init_repo.py completes, Git Fusion no longer
+                    uses or needs client spec <name>. You may delete it
+                    or use it for other purposes. Later changes to
+                    client spec <name> are not copied to Git Fusion.
+                    Public <repo-name> may contain '/' and ':'.
+                    The GF internal name will encode these characaters.
+
+                    
+                    Client spec <name> does not have to exist if
+                    --config <file> specified.
+    
+    --config <file> Specify a Git Fusion repo configuration file.
+                    Use this file to associate Perforce and Git branches.
+                    If omitted, p4gf_init_repo.py creates a single Git
+                    branch 'master', associated with the view in
+                    Perforce client spec <repo-name>.
+                    Cannot be used with --charset.
+                    Cannot be used with --p4client.
+
+    --p4client <client> Specify a P4 client name as basis for repo.
+                    This permits basing a Git Fusion repo
+                    on a p4 client of any name. Without this option
+                    p4gf_init_repo.py creates a single Git
+                    branch 'master', associated with the view in
+                    Perforce client spec <repo-name>.
+                    Cannot be used with --config.
+
+    --start <n>     Start Git history at changelist <n>.
+                    If omitted, Git history starts with the first
+                    changelist in this repo's view of Perforce.
+                    Cannot be used with --noclone.
+    
+    --noclone       Do not immediately populate the Git repo with
+                    content from Perforce.
+                    If omitted, p4gf_init_repo.py copies history from
+                    Perforce to Git, which can take a while for large
+                    histories.
+                    Cannot be used with --start.
+
+    --charset <charset> Specify a charset for the repo.
+                    If omitted, charset will be taken from the global
+                    config file or config file specified using --config.
+                    Cannot be used with --config.
+
+    -V              Display version information then exit.
