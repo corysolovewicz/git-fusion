@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3.3
 
 """Git Fusion submit triggers.
 
@@ -20,7 +20,7 @@
 
 CHARSET = []
 # For unicode servers uncomment the following line
-#CHARSET = ['-C', 'utf8']
+CHARSET = ['-C', 'utf8']
 
 # Set to the location of the p4 binary.
 # When in doubt, change this to an absolute path.
