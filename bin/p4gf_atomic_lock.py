@@ -330,8 +330,8 @@ def has_intersecting_views(current_reviews, clientmap):
 
     joined = Map.join(reviews_map, repo_map)
 
-    for l in joined.lhs():
-        if not l.startswith('-'):
-            return INTERSECT
+    #for l in joined.lhs():
+    #    if not l.startswith('-'):
+    #        return INTERSECT
 
     return NO_INTERSECT
