@@ -501,7 +501,7 @@ def generate_openssh_key(user, fp, key):
     openssh_key = key_type + ' ' + key
     ln = NTR('command="p4gf_auth_server.py --user={user} --keyfp={keyfp} $SSH_ORIGINAL_COMMAND",'\
              'no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty {key}').format(
-        user=user, keyfp=fp, key=openssh_key)
+        user=user.replace('\\', '\\\\'), keyfp=fp, key=openssh_key)
     return ln
 
 
