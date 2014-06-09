@@ -765,11 +765,17 @@ class G2P:
                 continue
 
             base_mods = p4gf_p4filetype.to_base_mods(result['type'])
-            if base_mods[0] in UNICODE_TYPES:
-                # Switch UTF16 files to ctext to avoid byte order changing.
-                base_mods[0] = 'text'
-                if not 'C' in base_mods:
-                    base_mods.append('C')
+            #if base_mods[0] in UNICODE_TYPES:
+            #    # Switch UTF16 files to ctext to avoid byte order changing.
+            #    base_mods[0] = 'text'
+            #    if not 'C' in base_mods:
+            #        base_mods.append('C')
+            #    filetype = p4gf_p4filetype.from_base_mods( base_mods[0]
+            #                                             , base_mods[1:])
+            #    self._p4run(['reopen', '-t', filetype, result['depotFile']])
+            # XXX: force ctext to unicode - sulee 20140609
+            if 'text' in base_mods and 'C' in base_mods:
+                base_mods = ['unicode', '']
                 filetype = p4gf_p4filetype.from_base_mods( base_mods[0]
                                                          , base_mods[1:])
                 self._p4run(['reopen', '-t', filetype, result['depotFile']])
