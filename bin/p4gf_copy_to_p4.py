@@ -156,7 +156,7 @@ MSGID_CANNOT_OPEN = [ p4gf_p4msgid.MsgDm_LockSuccess
                     , p4gf_p4msgid.MsgDm_OpenIsLocked
                     , p4gf_p4msgid.MsgDm_OpenXOpened
                     , p4gf_p4msgid.MsgDm_IntegXOpened
-                    , p4gf_p4msgid.MsgDm_OpenWarnOpenStream
+                    #, p4gf_p4msgid.MsgDm_OpenWarnOpenStream
                     , p4gf_p4msgid.MsgDm_IntegMovedUnmapped
                     , p4gf_p4msgid.MsgDm_ExVIEW
                     , p4gf_p4msgid.MsgDm_ExVIEW2
