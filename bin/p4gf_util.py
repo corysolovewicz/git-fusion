@@ -616,7 +616,7 @@ def git_checkout(sha1):
     Returns True if the checkout was successful (exit status of 0),
     and False otherwise.
     """
-    result = p4gf_proc.popen_no_throw(['git', 'checkout', sha1])
+    result = p4gf_proc.popen_no_throw(['git', 'checkout', '-f', sha1])
     return result['ec'] == 0
 
 
